@@ -380,7 +380,9 @@
   <div class="products-label">实验室 · Lab</div>
   <div class="products-grid">
 
-    <!-- ECamera -->
+    <!-- ECamera 已于 2026-06-11 临时下架（软著按“未发表”登记中，待下证后重新上架）。
+         重新上架：删除本行注释开头的 “<!--” 与下方对应的 “-->” 即可恢复整张卡片。 -->
+    <!--
     <div class="p-card">
       <div class="p-icon" style="background: linear-gradient(135deg, #0f2a3f, #1a4a6e);">
         <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -409,6 +411,7 @@
         <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
+    -->
 
     <!-- 星选 -->
     <div class="p-card" style="transition-delay:0.1s">
@@ -473,8 +476,41 @@
       </a>
     </div>
 
-    <!-- 成绩分析器 -->
+    <!-- 公式转PPT -->
     <div class="p-card" style="transition-delay:0.3s">
+      <div class="p-icon" style="background: linear-gradient(135deg, #2e0f24, #5a1a3e);">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="fx1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#F472B6"/>
+              <stop offset="100%" stop-color="#C026D3"/>
+            </linearGradient>
+          </defs>
+          <!-- 画框 -->
+          <rect x="3" y="3" width="30" height="30" rx="6" fill="url(#fx1)" opacity="0.14"/>
+          <rect x="3" y="3" width="30" height="30" rx="6" stroke="url(#fx1)" stroke-width="1.5"/>
+          <!-- 根号 -->
+          <path d="M8 20l2.5 5 4-13h7" stroke="url(#fx1)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- x 的平方 -->
+          <path d="M15.5 21.5l4 4M19.5 21.5l-4 4" stroke="#F472B6" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="25" cy="13" r="1.6" fill="#F472B6"/>
+          <!-- 闪点 -->
+          <path d="M28 24l.8 2 .8-2 2-.8-2-.8-.8-2-.8 2-2 .8z" fill="#F472B6" opacity="0.7"/>
+        </svg>
+      </div>
+      <div class="p-body">
+        <h3 class="p-name">公式转PPT · Formula2PPT</h3>
+        <p class="p-field">Formula OCR · Desktop</p>
+        <p class="p-desc">截图或手写公式，一键转成 WPS 演示 / PowerPoint 里可双击编辑的原生公式（非图片）。本地离线识别，需配合 WPS 演示使用。</p>
+      </div>
+      <a class="p-link" href="downloads/formula2ppt.zip" download="formula2ppt.zip">
+        下载  ·  Windows
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <!-- 成绩分析器 -->
+    <div class="p-card" style="transition-delay:0.4s">
       <div class="p-icon" style="background: linear-gradient(135deg, #0f2e24, #1a4d35);">
         <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -506,7 +542,7 @@
     </div>
 
     <!-- 物理切题 -->
-    <div class="p-card" style="transition-delay:0.4s">
+    <div class="p-card" style="transition-delay:0.5s">
       <div class="p-icon" style="background: linear-gradient(135deg, #2e1a0f, #5a2e10);">
         <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
