@@ -297,6 +297,15 @@
       white-space: nowrap;
     }
     .p-link:hover { color: #C9A84C; gap: 12px; }
+    .p-downloads {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 18px;
+      border-left: 1px solid rgba(201,168,76,0.12);
+    }
+    .p-downloads .p-link { justify-content: space-between; }
 
     /* scroll 提示箭头 */
     .scroll-arrow {
@@ -327,6 +336,8 @@
     @media (max-width: 680px) {
       .p-card { flex-direction: column; align-items: flex-start; }
       .p-link { margin-top: 8px; }
+      .p-downloads { width: 100%; padding: 12px 0 0; border-left: 0; border-top: 1px solid rgba(201,168,76,0.12); }
+      .p-downloads .p-link { width: 100%; margin-top: 0; }
       #products { padding: 80px 20px 100px; }
     }
   </style>
@@ -476,7 +487,7 @@
       </a>
     </div>
 
-    <!-- 公式转PPT -->
+    <!-- Formula2Office -->
     <div class="p-card" style="transition-delay:0.3s">
       <div class="p-icon" style="background: linear-gradient(135deg, #2e0f24, #5a1a3e);">
         <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -499,14 +510,20 @@
         </svg>
       </div>
       <div class="p-body">
-        <h3 class="p-name">公式转PPT · Formula2PPT</h3>
-        <p class="p-field">Formula OCR · Desktop</p>
-        <p class="p-desc">截图或手写公式，一键转成 WPS 演示 / PowerPoint 里可双击编辑的原生公式（非图片）。本地离线识别，需配合 WPS 演示使用。</p>
+        <h3 class="p-name">公式快插 · Formula2Office</h3>
+        <p class="p-field">Formula OCR · Windows + Android</p>
+        <p class="p-desc">截图或在平板、手机上手写公式，识别后直插 PowerPoint / WPS 演示和 Word，也可导出 LaTeX、Markdown。支持同 WiFi、USB 调试线和服务器中继连接。</p>
       </div>
-      <a class="p-link" href="downloads/formula2ppt.zip" download="formula2ppt.zip">
-        下载  ·  Windows
-        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <div class="p-downloads">
+        <a class="p-link" href="https://www.spacetimeintellect.com/downloads/formula2ppt.zip" download="formula2office-windows.zip">
+          电脑端 · Windows
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="p-link" href="https://www.spacetimeintellect.com/downloads/formula2office-android.apk" download="formula2office-android.apk">
+          平板 / 手机端 · Android
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
     </div>
 
     <!-- 成绩分析器 -->
